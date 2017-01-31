@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>Random Quote Generator</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/wikipedia-viewer.css" rel="stylesheet">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wikipedia-viewer.js"></script>
+  </head>
+  <body>  
+    <div id="wiki" class="container div-center">
+      <div class="text-center">
+        <label><h1 id="title">Wikipedia Viewer</h1></label>
+        <form class="form-inline" onSubmit="return false;">
+          <input id="liveSearch" autocomplete="off" type="text" class="form-control"  data-toggle="tooltip" data-placement="bottom" title="Type here to search">
+          <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"id="randomArticle" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Click for a random article"> Random</a>
+        </form>
+      </div> 
+      <div id="content" class="col"></div>
+      <button id="moreRes" type="button" class="btn btn-default">Show more</button>
+    </div>
+  </body>
+</html>
